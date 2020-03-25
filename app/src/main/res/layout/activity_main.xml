@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_weather_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="24sp" />
+    </ScrollView>
+
+    <!--TODO (2) Add a TextView that you will show the user if there is an error loading content-->
+    <!--TODO (3) Make the width and the height wrap_content-->
+    <!--TODO (4) Give the TextView a default error message stating that an error occurred (use strings.xml)-->
+    <!--TODO (5) Set the default visibility of the TextView to invisible-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_message"
+        android:visibility="invisible"
+        android:id="@+id/error_message"
+        android:padding="16dp"
+        android:textSize="20sp"
+        />
+
+    <!--TODO (12) Add a ProgressBar to show the user content is loading-->
+    <!--TODO (13) Make the width and height of the ProgressBar 42dp-->
+    <!--TODO (14) Set the layout_gravity of the ProgressBar to center-->
+    <!--TODO (15) Set the default visibility of the ProgressBar to invisible-->
+    <ProgressBar
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/progress_bar"/>
+</FrameLayout>
